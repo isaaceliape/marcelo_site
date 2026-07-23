@@ -15,7 +15,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://marcelogoncalves.com"),
+  metadataBase: new URL("https://marcelo-site-virid.vercel.app"),
   title: "Dr. Marcelo Goncalves — Odontologia em Santo Amaro, São Paulo",
   description:
     "Odontologia geral, estética, ortodontia e emergências em Santo Amaro, São Paulo. Dr. Marcelo Goncalves — CROSP 99907. Agende sua consulta.",
