@@ -15,6 +15,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
+  // TODO: Update metadataBase to final domain before release (e.g. "https://marcelogoncalves.com")
   metadataBase: new URL("https://marcelo-site-virid.vercel.app"),
   title: "Dr. Marcelo Goncalves — Odontologia em Santo Amaro, São Paulo",
   description:
