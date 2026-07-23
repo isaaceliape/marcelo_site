@@ -1,0 +1,9 @@
+{
+  "name": "marcelo-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}
