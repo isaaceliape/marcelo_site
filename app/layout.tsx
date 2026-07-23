@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${display.variable} ${body.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
