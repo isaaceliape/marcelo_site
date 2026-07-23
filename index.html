@@ -13,8 +13,10 @@
 <body>
   <header class="site-header">
     <div class="container site-header-inner">
-      <a href="#hero" class="logo">MG</a>
-      <a href="#contact" class="btn-primary header-cta">Book online</a>
+      <a href="#hero" class="logo">
+        <img src="logo.jpg" alt="Dr. Marcelo Goncalves" height="72">
+      </a>
+      <a href="#contact" class="btn-primary header-cta">Agendamento online</a>
     </div>
   </header>
 
@@ -32,19 +34,34 @@
         </div>
         <div class="hero-meta">
           <span>Fundado em 2018</span>
-          <span>Rio de Janeiro</span>
-          <span>Atendemos em português</span>
+          <span>Santo Amaro / São Paulo</span>
+          <span class="meta-accent">Registro CROSP 99907</span>
         </div>
       </div>
-      <div class="hero-image" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80" alt="Consultório odontológico moderno e iluminado" loading="eager">
+      <div class="hero-carousel" aria-label="Galeria do consultório">
+        <div class="hero-slides">
+          <div class="hero-slide active" aria-hidden="false">
+            <img src="clinic.jpeg" alt="Consultório odontológico moderno e iluminado" loading="eager">
+          </div>
+          <div class="hero-slide" aria-hidden="true">
+            <img src="clinic_02.jpeg" alt="Interior da clínica" loading="lazy">
+          </div>
+        </div>
+        <div class="hero-carousel-controls">
+          <button class="hero-carousel-btn" id="hero-prev" aria-label="Anterior">‹</button>
+          <div class="hero-carousel-dots">
+            <button class="hero-carousel-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero-carousel-dot" data-index="1" aria-label="Slide 2"></button>
+          </div>
+          <button class="hero-carousel-btn" id="hero-next" aria-label="Próximo">›</button>
+        </div>
       </div>
     </section>
 
     <section id="services" class="services">
       <div class="container">
         <div class="section-header reveal">
-          <h2>Serviços</h2>
+          <h2>Tratamentos</h2>
           <span class="section-number">01</span>
         </div>
         <div class="service-grid">
@@ -80,7 +97,7 @@
             <p>Formado no Brasil e com experiência na Europa, ele une fundamentos sólidos em prótese, implantologia e odontologia estética. Sua prática parte de um princípio: odontologia de qualidade não precisa ser um fardo.</p>
           </div>
           <figure class="about-image reveal" aria-hidden="true">
-            <img src="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?auto=format&fit=crop&w=1000&q=80" alt="Interior de consultório odontológico moderno" loading="lazy">
+            <img src="perfil.png" alt="Interior de consultório odontológico moderno" loading="lazy">
           </figure>
           <div class="about-values reveal">
             <div class="value">
@@ -103,11 +120,69 @@
       </div>
     </section>
 
+    <section id="credentials" class="credentials">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Formação</h2>
+          <span class="section-number">03</span>
+        </div>
+        <div class="cred-grid">
+          <article class="cred reveal">
+            <h3>Graduação em Odontologia</h3>
+            <p class="cred-school">Universidade de São Paulo — USP</p>
+            <p class="cred-year">2010</p>
+            <p class="cred-desc">Formação acadêmica sólida em clínica geral, com base em saúde bucal, prevenção e reabilitação.</p>
+          </article>
+          <article class="cred reveal">
+            <h3>Formação em Cirurgia e Prótese sobre Implantes</h3>
+            <p class="cred-school">FUNDECTO</p>
+            <p class="cred-year">2011</p>
+            <p class="cred-desc">Extensão universitária com foco em procedimentos cirúrgicos e reabilitação protéica.</p>
+          </article>
+          <article class="cred reveal">
+            <h3>Especialização em Ortodontia</h3>
+            <p class="cred-school">Faculdade do Centro Oeste Paulista (FACOP)</p>
+            <p class="cred-year">2021</p>
+            <p class="cred-desc">Especialização voltada à correção ortodôntica com foco em mini implantes e integração com cirurgia ortognática.</p>
+          </article>
+          <article class="cred reveal">
+            <h3>Imersão em Mini Implantes</h3>
+            <p class="cred-school">CEAO ACIEPE</p>
+            <p class="cred-year">2022</p>
+            <p class="cred-desc">Aprofundamento em fixação com mini implantes para procedimentos ortodônticos e de suporte clínico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-facts" class="about-facts">
+      <div class="container">
+        <div class="fact-grid">
+          <div class="fact reveal">
+            <span class="fact-number">14+</span>
+            <span class="fact-label">Anos de experiência</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-number">2010</span>
+            <span class="fact-label">Formado em Odontologia — USP</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-number">1.2k+</span>
+            <span class="fact-label">Pacientes atendidos</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-number">CROSP</span>
+            <span class="fact-label">Registro 99907</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header reveal">
           <h2>Contato</h2>
-          <span class="section-number">03</span>
+          <span class="section-number">04</span>
         </div>
         <div class="contact-grid">
           <div class="contact-info reveal">
@@ -115,6 +190,10 @@
             <div class="contact-block">
               <span class="contact-label">Clínica</span>
               <a href="tel:+551134983481">+55 11 3498-3481</a>
+            </div>
+            <div class="contact-block">
+              <span class="contact-block-label">Registro</span>
+              <span>CROSP 99907</span>
             </div>
             <div class="contact-block">
               <span class="contact-label">E-mail</span>
