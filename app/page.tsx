@@ -27,8 +27,7 @@ export default function Home() {
               resultado preciso.
             </h1>
             <p className="hero-lead">
-              Odontologia geral, estética e implantes em um ambiente acolhedor e
-              moderno. Um médico, uma atenção: você.
+              Odontologia geral, estética e ortodontia em Santo Amaro, São Paulo. Ambiente acolhedor e moderno. Um médico, uma atenção: você.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">
@@ -113,9 +112,9 @@ export default function Home() {
                   depois um plano claro, explicado de forma simples.
                 </p>
                 <p>
-                  Formado no Brasil e com experiência na Europa, ele une fundamentos sólidos em
-                  prótese, implantologia e odontologia estética. Sua prática parte de um princípio:
-                  odontologia de qualidade não precisa ser um fardo.
+                  Formado pela <strong>USP</strong> e especialista em ortodontia, ele une fundamentos sólidos em
+                  prótese, implantologia e odontologia estética. Atende em <strong>Santo Amaro, Zona Sul de São Paulo</strong>,
+                  com foco em resultados naturais e conforto durante todo o tratamento.
                 </p>
               </div>
               <figure className="about-image reveal" aria-hidden="true">
@@ -284,6 +283,18 @@ export default function Home() {
           <span>Odontologia calma e precisa.</span>
         </div>
       </footer>
+
+      <a
+        href="https://api.whatsapp.com/send?phone=5511969918002"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-float"
+        aria-label="Fale pelo WhatsApp"
+      >
+        <svg viewBox="0 0 32 32" fill="currentColor" width="28" height="28">
+          <path d="M16 2C8.3 2 2 8.3 2 16c0 2.8.9 5.5 2.5 7.7L2 30l6.5-2.5C10.8 29.1 13.4 30 16 30c7.7 0 14-6.3 14-14S23.7 2 16 2zm0 26c-2.4 0-4.7-.7-6.7-2l-.5-.3-4 1.5 1.5-3.9-.3-.5C5.7 21.7 5 19.4 5 17 5 10.9 9.9 6 16 6s11 4.9 11 11-4.9 11-11 11zm6.1-8.4c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2s-.9 1.1-1.1 1.3c-.2.2-.4.2-.7.1-1.5-.8-2.6-1.4-3.6-2.8-.3-.4-.3-.6-.2-.9.1-.2.3-.2.4-.3s.3-.3.4-.5.2-.3.1-.6c-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4-.6.6-1.5 1.6-1.5 3.9s1.5 4.5 1.7 4.8c.2.3 3 4.5 7.2 5.5 4.2 1 4.2-.7 4.2-.7.4-1.2 1.9-2.4 2.2-2.7.3-.3.4-.3.7-.1.3.1 1.7.9 2 1.1.3.2.5.2.6.1.1-.1.1-.4 0-.6-.1-.3-.8-1.7-1.1-2.2-.3-.5-.6-.5-.9-.6z"/>
+        </svg>
+      </a>
 
       <CarouselClient />
     </>
