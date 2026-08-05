@@ -15,8 +15,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  // TODO: Update metadataBase to final domain before release (e.g. "https://marcelogoncalves.com")
-  metadataBase: new URL("https://marcelo-site-virid.vercel.app"),
+  metadataBase: new URL("https://marcelogoncalvesodonto.com.br"),
   title: "Dr. Marcelo Goncalves — Odontologia em Santo Amaro, São Paulo",
   description:
     "Odontologia geral, estética, ortodontia e emergências em Santo Amaro, São Paulo. Dr. Marcelo Goncalves — CROSP 99907. Agende sua consulta.",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     title: "Dr. Marcelo Goncalves — Odontologia calma e precisa",
     description:
       "Odontologia geral, estética e ortodontia em Santo Amaro, São Paulo. CROSP 99907.",
-    url: "https://marcelogoncalves.com",
+    url: "https://marcelogoncalvesodonto.com.br",
     siteName: "Dr. Marcelo Goncalves",
     locale: "pt_BR",
     type: "website",
@@ -50,10 +49,10 @@ export default function RootLayout({
     name: "Dr. Marcelo Goncalves",
     description:
       "Odontologia geral, estética, ortodontia e emergências em Santo Amaro, São Paulo.",
-    url: "https://marcelogoncalves.com",
-    telephone: "+551134983481",
-    email: "contato@marcelogoncalves.com",
-    image: "https://marcelogoncalves.com/logo.jpg",
+    url: "https://marcelogoncalvesodonto.com.br",
+    telephone: "+551****3481",
+    email: "contato@marcelogoncalvesodonto.com.br",
+    image: "https://marcelogoncalvesodonto.com.br/logo.jpg",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
