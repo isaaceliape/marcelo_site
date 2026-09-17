@@ -34,7 +34,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: "Dr. Marcelo Goncalves <teste@resend.dev>",
-      to: ["contato@marcelogoncalves.com", "isaaceliape@gmail.com"],
+      to: ["marcelogoncalvesodontologia@gmail.com", "isaaceliape@gmail.com"],
       replyTo: safeEmail,
       subject: `Novo contato pelo site, ${safeName}`,
       html: `
