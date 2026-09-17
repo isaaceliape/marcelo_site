@@ -20,14 +20,14 @@ export default function Home() {
             <div className="accent-bar" />
             <p className="hero-kicker">Dr. Marcelo Goncalves</p>
             <p className="hero-subtitle">
-              Especialista em Ortodontia — Odontologia com propósito
+              Especialista em Ortodontia. Odontologia com propósito
             </p>
             <h1 className="hero-title">
-              Cuidado calmo,<br />
+              Cuidado individualizado,<br />
               resultado preciso.
             </h1>
             <p className="hero-lead">
-              Odontologia geral, estética e ortodontia em Santo Amaro, São Paulo. Ambiente acolhedor e moderno. Um médico, uma atenção: você.
+              Odontologia geral, ortodontia, dentística e mais especialidades em Santo Amaro, São Paulo. Ambiente acolhedor e moderno.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">
@@ -38,7 +38,7 @@ export default function Home() {
               </a>
             </div>
             <div className="hero-meta">
-              <span>Fundado em 2018</span>
+              <span>Fundado em 2014</span>
               <span>Santo Amaro / São Paulo</span>
               <span className="meta-accent">Registro CROSP 99907</span>
             </div>
@@ -80,11 +80,11 @@ export default function Home() {
             <div className="service-grid">
               <article className="service reveal">
                 <h3>Odontologia geral</h3>
-                <p>Check-ups, limpezas, restaurações e cuidados preventivos para manter o sorriso saudável.</p>
+                <p>Check-ups e cuidados preventivos para manter a saúde em dia. A prevenção é o melhor tratamento.</p>
               </article>
               <article className="service reveal">
-                <h3>Odontologia estética</h3>
-                <p>Facetas, clareamento e design do sorriso alinhados ao seu rosto, personalidade e objetivo.</p>
+                <h3>Dentística</h3>
+                <p>Restaurações, clareamento e estética dental e design do sorriso alinhados ao seu rosto, personalidade e objetivo.</p>
               </article>
               <article className="service reveal">
                 <h3>Ortodontia</h3>
@@ -107,13 +107,13 @@ export default function Home() {
             <div className="about-grid">
               <div className="about-copy reveal">
                 <p>
-                  O Dr. Marcelo Goncalves combina mais de uma década de experiência clínica a
-                  uma abordagem calma e centrada no paciente. Cada atendimento começa ouvindo —
-                  depois um plano claro, explicado de forma simples.
+                  Marcelo Goncalves e seus colaboradores combinam mais de uma década de experiência clínica a
+                  uma abordagem calma e individualizada para cada paciente, integrando diversas especialidades
+                  odontológicas. Cada atendimento começa ouvindo. Depois, um plano claro, explicado de forma simples.
                 </p>
                 <p>
                   Formado pela <strong>USP</strong> e especialista em ortodontia, ele une fundamentos sólidos em
-                  prótese, implantologia e odontologia estética. Atende em <strong>Santo Amaro, Zona Sul de São Paulo</strong>,
+                  diversas áreas da odontologia. Atende em <strong>Santo Amaro, Zona Sul de São Paulo</strong>,
                   com foco em resultados naturais e conforto durante todo o tratamento.
                 </p>
               </div>
@@ -124,17 +124,17 @@ export default function Home() {
                 <div className="value">
                   <span className="value-number">01</span>
                   <strong>Transparência</strong>
-                  <p>Explicações, opções e custos — sempre claros desde o início.</p>
+                  <p>Explicações, opções e custos, sempre claros desde o início.</p>
                 </div>
                 <div className="value">
                   <span className="value-number">02</span>
                   <strong>Precisão</strong>
-                  <p>Técnicas modernas e atenção cuidadosa aos detalhes.</p>
+                  <p>Técnicas baseadas em evidências científicas e atenção cuidadosa aos detalhes.</p>
                 </div>
                 <div className="value">
                   <span className="value-number">03</span>
                   <strong>Conforto</strong>
-                  <p>Ambiente tranquilo, atendimento cuidadoso e tempo para perguntas.</p>
+                  <p>Ambiente tranquilo, atendimento cuidadoso e tempo para esclarecimento de dúvidas.</p>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
             <div className="cred-grid">
               <article className="cred reveal">
                 <h3>Graduação em Odontologia</h3>
-                <p className="cred-school">Universidade de São Paulo — USP</p>
+                <p className="cred-school">Universidade de São Paulo (USP)</p>
                 <p className="cred-year">2010</p>
                 <p className="cred-desc">Formação acadêmica sólida em clínica geral, com base em saúde bucal, prevenção e reabilitação.</p>
               </article>
@@ -172,6 +172,18 @@ export default function Home() {
                 <p className="cred-year">2022</p>
                 <p className="cred-desc">Aprofundamento em fixação com mini implantes para procedimentos ortodônticos e de suporte clínico.</p>
               </article>
+              <article className="cred reveal">
+                <h3>Preparo ortodôntico para cirurgia ortognática</h3>
+                <p className="cred-school">SUZUKI ORTODONTIA</p>
+                <p className="cred-year">2022</p>
+                <p className="cred-desc">Formação em preparo ortodôntico integrado à cirurgia ortognática.</p>
+              </article>
+              <article className="cred reveal">
+                <h3>Clínica de alinhadores estéticos</h3>
+                <p className="cred-school">SUZUKI ORTODONTIA</p>
+                <p className="cred-year">desde 2021</p>
+                <p className="cred-desc">Atuação como professor assistente na clínica de alinhadores estéticos.</p>
+              </article>
             </div>
           </div>
         </section>
@@ -185,7 +197,7 @@ export default function Home() {
               </div>
               <div className="fact reveal">
                 <span className="fact-number">2010</span>
-                <span className="fact-label">Formado em Odontologia — USP</span>
+                <span className="fact-label">Formado em Odontologia, USP</span>
               </div>
               <div className="fact reveal">
                 <span className="fact-number">1.2k+</span>
@@ -208,11 +220,11 @@ export default function Home() {
             <div className="contact-grid">
               <div className="contact-info reveal">
                 <p className="contact-lead">
-                  Novos pacientes são bem-vindos. Ligue ou envie uma mensagem para agendar.
+                  Todos são bem-vindos. Entre em contato para agendar uma consulta.
                 </p>
                 <div className="contact-block">
                   <span className="contact-label">Clínica</span>
-                  <a href="tel:+551134983481">+55 11 3498-3481</a>
+                  <a href="tel:+5511969918002">+55 11 96991-8002</a>
                 </div>
                 <div className="contact-block">
                   <span className="contact-block-label">Registro</span>
@@ -220,7 +232,7 @@ export default function Home() {
                 </div>
                 <div className="contact-block">
                   <span className="contact-label">E-mail</span>
-                  <a href="mailto:contato@marcelogoncalves.com">contato@marcelogoncalves.com</a>
+                  <a href="mailto:marcelogoncalvesodontologia@gmail.com">marcelogoncalvesodontologia@gmail.com</a>
                 </div>
                 <div className="contact-block">
                   <span className="contact-label">Endereço</span>
@@ -232,9 +244,7 @@ export default function Home() {
                 <div className="contact-block">
                   <span className="contact-label">Horários</span>
                   <p>
-                    Seg–Sex 8:00–18:00
-                    <br />
-                    Sáb 9:00–13:00
+                    Seg–Sex 09:00–18:00
                   </p>
                 </div>
                 <div className="contact-block">

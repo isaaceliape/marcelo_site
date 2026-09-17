@@ -16,13 +16,13 @@ const body = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marcelogoncalvesodonto.com.br"),
-  title: "Dr. Marcelo Goncalves — Odontologia em Santo Amaro, São Paulo",
+  title: "Dr. Marcelo Goncalves. Odontologia em Santo Amaro, São Paulo",
   description:
-    "Odontologia geral, estética, ortodontia e emergências em Santo Amaro, São Paulo. Dr. Marcelo Goncalves — CROSP 99907. Agende sua consulta.",
+    "Odontologia geral, ortodontia, dentística e emergências em Santo Amaro, São Paulo. Dr. Marcelo Goncalves, CROSP 99907. Agende sua consulta.",
   openGraph: {
-    title: "Dr. Marcelo Goncalves — Odontologia calma e precisa",
+    title: "Dr. Marcelo Goncalves. Odontologia calma e precisa",
     description:
-      "Odontologia geral, estética e ortodontia em Santo Amaro, São Paulo. CROSP 99907.",
+      "Odontologia geral, ortodontia, dentística e emergências em Santo Amaro, São Paulo. CROSP 99907.",
     url: "https://marcelogoncalvesodonto.com.br",
     siteName: "Dr. Marcelo Goncalves",
     locale: "pt_BR",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Dr. Marcelo Goncalves — Odontologia em Santo Amaro, SP",
+        alt: "Dr. Marcelo Goncalves. Odontologia em Santo Amaro, SP",
       },
     ],
   },
@@ -48,10 +48,10 @@ export default function RootLayout({
     "@type": "Dentist",
     name: "Dr. Marcelo Goncalves",
     description:
-      "Odontologia geral, estética, ortodontia e emergências em Santo Amaro, São Paulo.",
+      "Odontologia geral, ortodontia, dentística e emergências em Santo Amaro, São Paulo.",
     url: "https://marcelogoncalvesodonto.com.br",
-    telephone: "+551****3481",
-    email: "contato@marcelogoncalvesodonto.com.br",
+    telephone: "+5511969918002",
+    email: "marcelogoncalvesodontologia@gmail.com",
     image: "https://marcelogoncalvesodonto.com.br/logo.jpg",
     priceRange: "$$",
     address: {
@@ -71,14 +71,8 @@ export default function RootLayout({
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
         opens: "09:00",
-        closes: "13:00",
+        closes: "18:00",
       },
     ],
     areaServed: [
@@ -113,7 +107,7 @@ export default function RootLayout({
     ],
     knowsAbout: [
       "Odontologia geral",
-      "Odontologia estética",
+      "Dentística",
       "Ortodontia",
       "Emergências odontológicas",
     ],

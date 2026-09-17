@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       from: "Dr. Marcelo Goncalves <teste@resend.dev>",
       to: ["contato@marcelogoncalves.com", "isaaceliape@gmail.com"],
       replyTo: safeEmail,
-      subject: `Novo contato pelo site — ${safeName}`,
+      subject: `Novo contato pelo site, ${safeName}`,
       html: `
         <div style="font-family: Inter, system-ui, sans-serif; color: #161816; line-height: 1.6;">
           <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 22px; margin: 0 0 16px;">
