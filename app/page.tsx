@@ -6,7 +6,7 @@ export default function Home() {
       <header className="site-header">
         <div className="container site-header-inner">
           <a href="#hero" className="logo">
-            <img src="/logo.jpg" alt="Dr. Marcelo Goncalves" height={72} />
+            <img src="/logo.jpg" alt="Dr. Marcelo Gonçalves" height={72} />
           </a>
           <a href="#contact" className="btn-primary header-cta">
             Agendamento online
@@ -18,29 +18,34 @@ export default function Home() {
         <section id="hero" className="hero">
           <div className="container">
             <div className="accent-bar" />
-            <p className="hero-kicker">Dr. Marcelo Goncalves</p>
+            <p className="hero-kicker">Dr. Marcelo Gonçalves</p>
             <p className="hero-subtitle">
-              Especialista em Ortodontia. Odontologia com propósito
+              Cirurgião-Dentista | Especialista em Ortodontia
+              <br />
+              Odontologia com propósito
             </p>
             <h1 className="hero-title">
-              Cuidado individualizado,<br />
-              resultado preciso.
+              Cuidado individualizado.<br />
+              Resultados naturais.
             </h1>
             <p className="hero-lead">
-              Odontologia geral, ortodontia, dentística e mais especialidades em Santo Amaro, São Paulo. Ambiente acolhedor e moderno.
+              Clínica geral, dentística e ortodontia em Santo Amaro, São Paulo.
+            </p>
+            <p className="hero-lead">
+              Um atendimento próximo, tranquilo e personalizado, com planejamento cuidadoso e integração entre diferentes especialidades da odontologia.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">
                 Agendar consulta
               </a>
               <a href="#tratamentos" className="btn-ghost">
-                Nossos serviços
+                Conheça nossos tratamentos
               </a>
             </div>
             <div className="hero-meta">
-              <span>Fundado em 2014</span>
-              <span>Santo Amaro / São Paulo</span>
-              <span className="meta-accent">Registro CROSP 99907</span>
+              <span>Desde 2014</span>
+              <span>Santo Amaro, São Paulo</span>
+              <span className="meta-accent">CROSP 99907</span>
             </div>
           </div>
           <div className="hero-carousel" aria-label="Galeria do consultório">
@@ -79,20 +84,32 @@ export default function Home() {
             </div>
             <div className="service-grid">
               <article className="service reveal">
-                <h3>Odontologia geral</h3>
-                <p>Check-ups e cuidados preventivos para manter a saúde em dia. A prevenção é o melhor tratamento.</p>
+                <h3>Clínica Geral</h3>
+                <p>Cuidados preventivos e tratamentos para manter sua saúde bucal em dia. Consultas, avaliações e acompanhamento individualizado. Prevenir continua sendo a melhor forma de cuidar.</p>
               </article>
               <article className="service reveal">
                 <h3>Dentística</h3>
-                <p>Restaurações, clareamento e estética dental e design do sorriso alinhados ao seu rosto, personalidade e objetivo.</p>
+                <p>Restaurações, clareamento e procedimentos estéticos planejados para valorizar o sorriso de forma natural, respeitando as características do rosto, a personalidade e os objetivos de cada paciente.</p>
               </article>
               <article className="service reveal">
                 <h3>Ortodontia</h3>
-                <p>Alinhadores invisíveis e aparelhos fixos para todas as idades, com acompanhamento personalizado.</p>
+                <p>Tratamentos com aparelhos fixos e alinhadores transparentes para crianças, adolescentes e adultos. Cada caso é avaliado individualmente para definir o planejamento mais adequado.</p>
               </article>
               <article className="service reveal">
-                <h3>Emergências</h3>
-                <p>Atendimento no mesmo dia para dor, trauma e urgências odontológicas. Sem longas esperas.</p>
+                <h3>Endodontia</h3>
+                <p>Tratamento de canal realizado com planejamento e atenção aos detalhes, buscando preservar o dente e devolver conforto e função.</p>
+              </article>
+              <article className="service reveal">
+                <h3>Cirurgia</h3>
+                <p>Procedimentos cirúrgicos realizados com planejamento, segurança e acompanhamento individualizado.</p>
+              </article>
+              <article className="service reveal">
+                <h3>Prótese</h3>
+                <p>Reabilitação de dentes comprometidos ou ausentes, buscando recuperar função, conforto e estética.</p>
+              </article>
+              <article className="service reveal">
+                <h3>Implantodontia</h3>
+                <p>Implantes e reabilitações sobre implantes para substituir dentes perdidos e devolver função e harmonia ao sorriso.</p>
               </article>
             </div>
           </div>
@@ -107,34 +124,48 @@ export default function Home() {
             <div className="about-grid">
               <div className="about-copy reveal">
                 <p>
-                  Marcelo Goncalves e seus colaboradores combinam mais de uma década de experiência clínica a
-                  uma abordagem calma e individualizada para cada paciente, integrando diversas especialidades
-                  odontológicas. Cada atendimento começa ouvindo. Depois, um plano claro, explicado de forma simples.
+                  <strong>Uma odontologia próxima, cuidadosa e baseada em conhecimento</strong>
                 </p>
                 <p>
-                  Formado pela <strong>USP</strong> e especialista em ortodontia, ele une fundamentos sólidos em
-                  diversas áreas da odontologia. Atende em <strong>Santo Amaro, Zona Sul de São Paulo</strong>,
-                  com foco em resultados naturais e conforto durante todo o tratamento.
+                  Desde 2014, o Dr. Marcelo Gonçalves atua na odontologia unindo experiência clínica,
+                  atualização constante e uma abordagem individualizada.
+                </p>
+                <p>
+                  Especialista em Ortodontia e graduado pela Universidade de São Paulo (USP), construiu sua
+                  trajetória profissional com formação em diferentes áreas da odontologia e experiência na
+                  integração entre ortodontia, estética e reabilitação oral.
+                </p>
+                <p>
+                  Em seu consultório, cada tratamento começa pela escuta. O objetivo é compreender as necessidades
+                  e expectativas de cada paciente para, então, construir um plano de tratamento claro,
+                  individualizado e baseado em evidências científicas.
+                </p>
+                <p>
+                  A atuação em conjunto com profissionais de diferentes especialidades permite oferecer uma
+                  abordagem integrada, especialmente nos casos que exigem mais de uma área da odontologia.
                 </p>
               </div>
               <figure className="about-image reveal" aria-hidden="true">
                 <img src="/perfil.png" alt="Interior de consultório odontológico moderno" loading="lazy" />
               </figure>
               <div className="about-values reveal">
+                <p>
+                  <strong>O que guia nosso trabalho</strong>
+                </p>
                 <div className="value">
                   <span className="value-number">01</span>
                   <strong>Transparência</strong>
-                  <p>Explicações, opções e custos, sempre claros desde o início.</p>
+                  <p>Explicamos o diagnóstico, as possibilidades de tratamento e os custos de maneira clara, para que você possa tomar suas decisões com segurança.</p>
                 </div>
                 <div className="value">
                   <span className="value-number">02</span>
                   <strong>Precisão</strong>
-                  <p>Técnicas baseadas em evidências científicas e atenção cuidadosa aos detalhes.</p>
+                  <p>Planejamento cuidadoso, atenção aos detalhes e utilização de técnicas fundamentadas em conhecimento científico.</p>
                 </div>
                 <div className="value">
                   <span className="value-number">03</span>
                   <strong>Conforto</strong>
-                  <p>Ambiente tranquilo, atendimento cuidadoso e tempo para esclarecimento de dúvidas.</p>
+                  <p>Um atendimento tranquilo, próximo e respeitoso, com tempo para ouvir, explicar e esclarecer suas dúvidas.</p>
                 </div>
               </div>
             </div>
@@ -152,37 +183,37 @@ export default function Home() {
                 <h3>Graduação em Odontologia</h3>
                 <p className="cred-school">Universidade de São Paulo (USP)</p>
                 <p className="cred-year">2010</p>
-                <p className="cred-desc">Formação acadêmica sólida em clínica geral, com base em saúde bucal, prevenção e reabilitação.</p>
+                <p className="cred-desc">Formação acadêmica com base em clínica odontológica, saúde bucal, prevenção e reabilitação.</p>
               </article>
               <article className="cred reveal">
                 <h3>Formação em Cirurgia e Prótese sobre Implantes</h3>
                 <p className="cred-school">FUNDECTO</p>
                 <p className="cred-year">2011</p>
-                <p className="cred-desc">Extensão universitária com foco em procedimentos cirúrgicos e reabilitação protéica.</p>
+                <p className="cred-desc">Extensão universitária com ênfase em procedimentos cirúrgicos e reabilitação protética sobre implantes.</p>
               </article>
               <article className="cred reveal">
                 <h3>Especialização em Ortodontia</h3>
                 <p className="cred-school">Faculdade do Centro Oeste Paulista (FACOP)</p>
                 <p className="cred-year">2021</p>
-                <p className="cred-desc">Especialização voltada à correção ortodôntica com foco em mini implantes e integração com cirurgia ortognática.</p>
+                <p className="cred-desc">Especialização em Ortodontia, com aprofundamento em mecânicas ortodônticas, utilização de mini-implantes e integração com a cirurgia ortognática.</p>
               </article>
               <article className="cred reveal">
-                <h3>Imersão em Mini Implantes</h3>
+                <h3>Imersão em Mini-Implantes</h3>
                 <p className="cred-school">CEAO ACIEPE</p>
                 <p className="cred-year">2022</p>
-                <p className="cred-desc">Aprofundamento em fixação com mini implantes para procedimentos ortodônticos e de suporte clínico.</p>
+                <p className="cred-desc">Aprofundamento em técnicas de ancoragem esquelética e utilização de mini-implantes em tratamentos ortodônticos.</p>
               </article>
               <article className="cred reveal">
-                <h3>Preparo ortodôntico para cirurgia ortognática</h3>
-                <p className="cred-school">SUZUKI ORTODONTIA</p>
+                <h3>Preparo Ortodôntico para Cirurgia Ortognática</h3>
+                <p className="cred-school">Suzuki Ortodontia</p>
                 <p className="cred-year">2022</p>
-                <p className="cred-desc">Formação em preparo ortodôntico integrado à cirurgia ortognática.</p>
+                <p className="cred-desc">Aprimoramento do planejamento e da condução ortodôntica de pacientes com indicação de cirurgia ortognática.</p>
               </article>
               <article className="cred reveal">
-                <h3>Clínica de alinhadores estéticos</h3>
-                <p className="cred-school">SUZUKI ORTODONTIA</p>
-                <p className="cred-year">desde 2021</p>
-                <p className="cred-desc">Atuação como professor assistente na clínica de alinhadores estéticos.</p>
+                <h3>Clínica de Alinhadores Estéticos</h3>
+                <p className="cred-school">Suzuki Ortodontia</p>
+                <p className="cred-year">Desde 2021</p>
+                <p className="cred-desc">Atuação como professor assistente na clínica de alinhadores estéticos, acompanhando o planejamento e a condução de tratamentos ortodônticos com alinhadores.</p>
               </article>
             </div>
           </div>
@@ -220,10 +251,13 @@ export default function Home() {
             <div className="contact-grid">
               <div className="contact-info reveal">
                 <p className="contact-lead">
-                  Todos são bem-vindos. Entre em contato para agendar uma consulta.
+                  Será um prazer receber você
+                </p>
+                <p className="contact-lead">
+                  Todos são bem-vindos. Entre em contato para tirar suas dúvidas ou agendar uma consulta.
                 </p>
                 <div className="contact-block">
-                  <span className="contact-label">Clínica</span>
+                  <span className="contact-label">Telefone / WhatsApp</span>
                   <a href="tel:+5511969918002">+55 11 96991-8002</a>
                 </div>
                 <div className="contact-block">
@@ -237,14 +271,19 @@ export default function Home() {
                 <div className="contact-block">
                   <span className="contact-label">Endereço</span>
                   <address>
-                    R. Benedito Fernandes, 545 - Sl 406 - Santo Amaro, São Paulo - SP, 04746-110 -
-                    Brasil
+                    R. Benedito Fernandes, 545 · Sala 406
+                    <br />
+                    Santo Amaro · São Paulo, SP
+                    <br />
+                    04746-110 · Brasil
                   </address>
                 </div>
                 <div className="contact-block">
                   <span className="contact-label">Horários</span>
                   <p>
-                    Seg–Sex 09:00–18:00
+                    Segunda a sexta · 09h–18h
+                    <br />
+                    Sábado · 09h–13h
                   </p>
                 </div>
                 <div className="contact-block">
@@ -254,7 +293,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="contact-block">
-                  <span className="contact-label">Social</span>
+                  <span className="contact-label">Instagram</span>
                   <a href="https://www.instagram.com/marcelogoncalvesodontologia/" target="_blank" rel="noopener noreferrer">
                     @marcelogoncalvesodontologia
                   </a>
@@ -289,8 +328,8 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container site-footer-inner">
-          <span>© <span id="year" /> Dr. Marcelo Goncalves</span>
-          <span>Odontologia calma e precisa.</span>
+          <span>© <span id="year" /> Dr. Marcelo Gonçalves</span>
+          <span>Odontologia com propósito.</span>
         </div>
       </footer>
 
