@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { submitContactForm } from "./contact-submit";
 
 export default function CarouselClient() {
   const current = useRef(0);
@@ -105,16 +106,7 @@ export default function CarouselClient() {
       status.textContent = "Enviando...";
 
       try {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-        const result = (await response.json().catch(() => null)) as { error?: string } | null;
-
-        if (!response.ok) {
-          throw new Error(result?.error || "Erro ao enviar. Tente novamente.");
-        }
+        await submitContactForm(payload);
 
         status.style.color = "";
         status.textContent = "Mensagem enviada. Retornaremos em breve.";
