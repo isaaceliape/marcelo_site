@@ -32,7 +32,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const data = await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from: "Dr. Marcelo Goncalves <teste@resend.dev>",
       to: ["marcelogoncalvesodontologia@gmail.com", "isaaceliape@gmail.com"],
       replyTo: safeEmail,
@@ -50,6 +50,14 @@ export async function POST(request: Request) {
         </div>
       `,
     });
+
+    if (sendError) {
+      console.error("Erro ao enviar e-mail:", sendError);
+      return NextResponse.json(
+        { error: "Erro ao enviar. Tente novamente." },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
