@@ -83,9 +83,57 @@ export default function CarouselClient() {
       start();
     }
 
+    /* contact form */
+    const form = document.getElementById("contact-form") as HTMLFormElement | null;
+    const status = document.getElementById("form-status");
+    const submit = document.getElementById("contact-submit") as HTMLButtonElement | null;
+
+    const onSubmit = async (event: Event) => {
+      event.preventDefault();
+      if (!form || !status || !submit) return;
+
+      const data = new FormData(form);
+      const payload = {
+        name: String(data.get("name") || "").trim(),
+        email: String(data.get("email") || "").trim(),
+        phone: String(data.get("phone") || "").trim(),
+        message: String(data.get("message") || "").trim(),
+      };
+
+      submit.disabled = true;
+      status.style.color = "";
+      status.textContent = "Enviando...";
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const result = (await response.json().catch(() => null)) as { error?: string } | null;
+
+        if (!response.ok) {
+          throw new Error(result?.error || "Erro ao enviar. Tente novamente.");
+        }
+
+        status.style.color = "";
+        status.textContent = "Mensagem enviada. Retornaremos em breve.";
+        form.reset();
+      } catch (error) {
+        status.style.color = "#b3261e";
+        status.textContent =
+          error instanceof Error ? error.message : "Erro ao enviar. Tente novamente.";
+      } finally {
+        submit.disabled = false;
+      }
+    };
+
+    form?.addEventListener("submit", onSubmit);
+
     return () => {
       io.disconnect();
       if (timer.current) window.clearInterval(timer.current);
+      form?.removeEventListener("submit", onSubmit);
     };
   }, []);
 
