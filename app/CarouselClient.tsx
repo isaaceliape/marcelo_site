@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { submitContactForm } from "./contact-submit";
+import { contactValidationMessage } from "./contact-validation";
 
 export default function CarouselClient() {
   const current = useRef(0);
@@ -94,22 +95,18 @@ export default function CarouselClient() {
       "input, textarea"
     );
 
-    const messageFor = (field: HTMLInputElement | HTMLTextAreaElement): string => {
-      if (field.validity.valueMissing) {
-        if (field.name === "name") return "Por favor, preencha seu nome.";
-        if (field.name === "email") return "Por favor, informe seu e-mail.";
-        if (field.name === "message") return "Por favor, escreva sua mensagem.";
-        return "Por favor, preencha este campo.";
-      }
-      if (field.validity.typeMismatch && field.type === "email") {
-        return "Por favor, informe um e-mail válido.";
-      }
-      return "";
-    };
-
     const onInvalid = (event: Event) => {
       const field = event.target as HTMLInputElement | HTMLTextAreaElement;
-      field.setCustomValidity(messageFor(field));
+      field.setCustomValidity(
+        contactValidationMessage({
+          name: field.name,
+          type: field.type,
+          validity: {
+            valueMissing: field.validity.valueMissing,
+            typeMismatch: field.validity.typeMismatch,
+          },
+        })
+      );
     };
 
     const onInput = (event: Event) => {
