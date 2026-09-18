@@ -314,7 +314,7 @@ export default function Home() {
                 </label>
                 <label>
                   <span>Mensagem</span>
-                  <textarea name="message" rows={4} />
+                  <textarea name="message" rows={4} required />
                 </label>
                 <button className="btn-primary" type="submit" id="contact-submit">
                   Enviar mensagem

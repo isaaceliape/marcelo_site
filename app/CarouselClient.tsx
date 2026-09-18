@@ -89,6 +89,38 @@ export default function CarouselClient() {
     const status = document.getElementById("form-status");
     const submit = document.getElementById("contact-submit") as HTMLButtonElement | null;
 
+    /* contact form validation messages in Portuguese */
+    const fields = form?.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(
+      "input, textarea"
+    );
+
+    const messageFor = (field: HTMLInputElement | HTMLTextAreaElement): string => {
+      if (field.validity.valueMissing) {
+        if (field.name === "name") return "Por favor, preencha seu nome.";
+        if (field.name === "email") return "Por favor, informe seu e-mail.";
+        if (field.name === "message") return "Por favor, escreva sua mensagem.";
+        return "Por favor, preencha este campo.";
+      }
+      if (field.validity.typeMismatch && field.type === "email") {
+        return "Por favor, informe um e-mail válido.";
+      }
+      return "";
+    };
+
+    const onInvalid = (event: Event) => {
+      const field = event.target as HTMLInputElement | HTMLTextAreaElement;
+      field.setCustomValidity(messageFor(field));
+    };
+
+    const onInput = (event: Event) => {
+      (event.target as HTMLInputElement | HTMLTextAreaElement).setCustomValidity("");
+    };
+
+    fields?.forEach((field) => {
+      field.addEventListener("invalid", onInvalid);
+      field.addEventListener("input", onInput);
+    });
+
     const onSubmit = async (event: Event) => {
       event.preventDefault();
       if (!form || !status || !submit) return;
@@ -126,6 +158,10 @@ export default function CarouselClient() {
       io.disconnect();
       if (timer.current) window.clearInterval(timer.current);
       form?.removeEventListener("submit", onSubmit);
+      fields?.forEach((field) => {
+        field.removeEventListener("invalid", onInvalid);
+        field.removeEventListener("input", onInput);
+      });
     };
   }, []);
 
