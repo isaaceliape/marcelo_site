@@ -16,7 +16,10 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://marcelogoncalvesodonto.com.br"),
+  metadataBase: new URL("https://www.marcelogoncalvesodonto.com.br"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Dr. Marcelo Gonçalves. Odontologia em Santo Amaro, São Paulo",
   description:
     "Clínica geral, dentística, ortodontia, endodontia, cirurgia, prótese e implantodontia em Santo Amaro, São Paulo. Dr. Marcelo Gonçalves, CROSP 99907. Agende sua consulta.",
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
     title: "Dr. Marcelo Gonçalves. Odontologia com propósito",
     description:
       "Clínica geral, dentística e ortodontia em Santo Amaro, São Paulo. Cuidado individualizado, resultados naturais. CROSP 99907.",
-    url: "https://marcelogoncalvesodonto.com.br",
+    url: "https://www.marcelogoncalvesodonto.com.br",
     siteName: "Dr. Marcelo Gonçalves",
     locale: "pt_BR",
     type: "website",
@@ -50,10 +53,10 @@ export default function RootLayout({
     name: "Dr. Marcelo Gonçalves",
     description:
       "Clínica geral, dentística, ortodontia, endodontia, cirurgia, prótese e implantodontia em Santo Amaro, São Paulo.",
-    url: "https://marcelogoncalvesodonto.com.br",
+    url: "https://www.marcelogoncalvesodonto.com.br",
     telephone: "+5511969918002",
     email: "marcelogoncalvesodontologia@gmail.com",
-    image: "https://marcelogoncalvesodonto.com.br/logo.jpg",
+    image: "https://www.marcelogoncalvesodonto.com.br/logo.jpg",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
